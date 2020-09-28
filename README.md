@@ -29,6 +29,8 @@ Full active scan: ~30mins
 2) View static results
 Static HTML showing test results and suggested corrective actions can be found in the repo. Exmaple: View output.html in the local repo
 
+<img src="zap-scan-results.pdf?raw=true" width="1080px">
+
 3) View searchable results in Kibana. ELK is launched after the tests complete and will be running on port 5601. Browse to: http://localhost:5601  (username: elastic, pass: changeme)
 
 <img src="zap-proxy.gif?raw=true" width="1080px">
