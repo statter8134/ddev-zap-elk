@@ -2,7 +2,7 @@
 
 DevSecOps has become a movement that, amongst other things, shifts security awareness and testing ‘left’, to be incorporated earlier and continuously throughout the SDLC. It empowers developers to test for security flaws, primarily using Dynamic Application Security Testing (DAST) tools, and view the results in real-time. This minimizes the impact of discovering security flaws and allows for a less painful correction in the latter stages of development. 
 
-DDEV-Local enables developers to get up and working on projects faster, and DDEV-Live offers scalable infrastructure to seamlessly run those applications at scale. As part of the development process the DDEV team now offers a compact DAST framework that allows developers to test for security flaws and review those results at any stage of their development, from the first line of code through to testing as part of the build. 
+DDEV-Local enables developers to get up and working on projects faster, and DDEV-Live offers scalable infrastructure to seamlessly run those applications at scale. As part of the DDEV development process it's possible to easily incorporate a simple DAST framework that allows developers to test for security flaws and review those results at any stage of their development, from the first line of code through to testing as part of the build. 
 
 
 ## Requirements
