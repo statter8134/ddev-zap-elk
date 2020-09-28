@@ -1,9 +1,8 @@
-# ddev-zap-elk
+# Security testing and DDEV-Local
 
-Automated security tests for DDEV
+DevSecOps has become a movement that, amongst other things, shifts security awareness and testing ‘left’, to be incorporated earlier and continuously throughout the SDLC. It empowers developers to test for security flaws, primarily using Dynamic Application Security Testing (DAST) tools, and view the results in real-time. This minimizes the impact of discovering security flaws and allows for a less painful correction in the latter stages of development. 
 
-You can integrate these results with your own reporting tool, but we like ELK :). 
-It creates a **html**,**xml** and a **json** file, therefore, any CI tool integration is easy.
+DDEV-Local enables developers to get up and working on projects faster, and DDEV-Live offers scalable infrastructure to seamlessly run those applications at scale. As part of the development process the DDEV team now offers a framework that allows developers to test for security flaws and review those results at any stage of their development, from the first line of code through to testing as part of the build. 
 
 
 ## Requirements
@@ -14,11 +13,27 @@ It creates a **html**,**xml** and a **json** file, therefore, any CI tool integr
 
 ## Usage
 
-Just pass URL Parameter to the script. The scan can take more than 30 mins. because of the web crawler (Spider).
+Just pass a URL to any one of the three scripts. 
 
+Baseline Scan
 ```shell
 ./run-docker-baseline.sh https://www.example.com/
 ```
+Tools: OWASP ZAP (baseline.py), nmap 
+
+or
+```shell
+./run-docker-extended.sh https://www.example.com/
+```
+Tools: OWASP-ZAP, nmap, Nikkto, sqlmap,
+
+or
+```shell
+./run-docker-full.sh https://www.example.com/
+```
+Tools: OWASP-ZAP, nmap, Nikkto, sqlmap, owasp-depenency-check
+
+
 
 1) Testing will run against the host. Estimated times are below, but are highly dependent on the size of your project / site:
 
