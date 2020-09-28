@@ -1,20 +1,18 @@
 # ddev-zap-elk
 
-Automated Security Tests for DDEV - Dockerised secruity tools and results in Kibana.
+Automated security tests for DDEV
 
 You can integrate these results with your own reporting tool, but we like ELK :). 
 It creates a **html**,**xml** and a **json** file, therefore, any CI tool integration is easy.
 
-## Requirements
 
-------------
+## Requirements
 
 * Docker
 * Docker-compose
 
-## Usage
 
-------------
+## Usage
 
 Just pass URL Parameter to the script. The scan can take more than 30 mins. because of the web crawler (Spider).
 
