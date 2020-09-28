@@ -19,6 +19,8 @@ Baseline Scan
 ```shell
 ./run-docker-baseline.sh https://www.example.com/
 ```
+Baseline Scan: <2 mins
+
 Tools: OWASP ZAP (baseline.py), nmap 
 
 or
@@ -37,14 +39,14 @@ Tools: OWASP-ZAP, nmap, Nikkto, sqlmap, owasp-depenency-check
 
 1) Testing will run against the host. Estimated times are below, but are highly dependent on the size of your project / site:
 
-Baseline Scan: <2 mins
+
 Extended Scan: <10 mins
 Full active scan: ~30mins
 
 2) View static results
 Static HTML showing test results and suggested corrective actions can be found in the repo. Exmaple: View output.html in the local repo
 
-<img src="zap-scan-results.pdf?raw=true" width="1080px">
+<img src="zap-scan-results.jpg">
 
 3) View searchable results in Kibana. ELK is launched after the tests complete and will be running on port 5601. Browse to: http://localhost:5601  (username: elastic, pass: changeme)
 
