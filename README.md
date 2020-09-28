@@ -12,23 +12,23 @@ DDEV-Local enables developers to get up and working on projects faster, and DDEV
 
 ## Usage
 
-Just pass a URL to any one of the three scripts. Typically this is run after executing ```ddev
+Just pass a URL to any one of the three scripts. Typically this is run after executing ```ddev launch``` and the url is ```[site-description].ddev.site```
 
-**Baseline Scan**
+**- Baseline Scan**
 ```shell
 ./run-docker-baseline.sh https://www.example.com/
 ```
 Estimated duration: <2 mins
 Tools: OWASP ZAP (baseline.py), nmap 
 
-**Extended Scan**
+**- Extended Scan**
 ```shell
 ./run-docker-extended.sh https://www.example.com/
 ```
 Estimated duration: 10-15 mins
 Tools: OWASP-ZAP, nmap, Nikkto, sqlmap
 
-**Full / Active Scan**
+**- Full / Active Scan**
 ```shell
 ./run-docker-full.sh https://www.example.com/
 ```
@@ -39,10 +39,7 @@ Tools: OWASP-ZAP, nmap, Nikkto, sqlmap, owasp-depenency-check
 
 ## View static results
 Static HTML showing test results and suggested corrective actions can be found in the repo. Exmaple: View output.html in the local repo
-
 <img src="zap-scan-results.jpg">
-
 ## View searchable results in Kibana.
 ELK is launched after the tests complete and will be running on port 5601. Browse to: http://localhost:5601  (username: elastic, pass: changeme)
-
 <img src="zap-proxy.gif?raw=true" width="1080px">
